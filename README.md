@@ -37,6 +37,29 @@ This repository contains the tasks I completed during my Machine Learning Intern
 - Visualized Actual vs Predicted house prices using a scatter plot
 - Interpreted the R² score in simple language
 
+## 📌 Task 5: Model Evaluation and Hyperparameter Tuning
+
+### Objective
+Evaluate and improve the Logistic Regression model built on the Titanic dataset.
+
+### Tasks Completed
+- Revisited the Logistic Regression model
+- Evaluated the model using Accuracy, Precision, Recall, and F1-score
+- Generated a Classification Report
+- Explained why accuracy alone can be misleading for imbalanced datasets
+- Applied GridSearchCV for hyperparameter tuning
+- Tuned the hyperparameters:
+  - C = 1
+  - Solver = liblinear
+- Compared the original and tuned model performance
+
+### Results
+- Original Accuracy: **81.01%**
+- Tuned Accuracy: **78.21%**
+- Best Parameters:
+- C = 1
+  - Solver = liblinear
+
 ## 🛠️ Technologies Used
 - Python
 - Pandas
