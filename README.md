@@ -60,6 +60,35 @@ Evaluate and improve the Logistic Regression model built on the Titanic dataset.
 - C = 1
   - Solver = liblinear
 
+## 📌 Task 6: Customer Churn Prediction
+
+### Objective
+Predict customer churn using machine learning and compare the performance of two classification models.
+
+### Tasks Completed
+- Loaded and explored the Telco Customer Churn dataset
+- Cleaned and preprocessed the data
+- Encoded categorical variables
+- Trained Logistic Regression and Decision Tree models
+- Compared model performance using accuracy
+- Identified the most important features affecting customer churn
+- Summarized business insights based on the results
+
+### Results
+- Logistic Regression Accuracy: **81.83%**
+- Decision Tree Accuracy: **72.89%**
+
+### Top Important Features
+- Contract
+- MonthlyCharges
+- customerID *(identified by the model, though it is a unique identifier and would typically be excluded in practice)*
+
+### Tools Used
+- Python
+- Pandas
+- Scikit-learn
+- Google Colab
+
 ## 🛠️ Technologies Used
 - Python
 - Pandas
