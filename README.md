@@ -83,21 +83,47 @@ Predict customer churn using machine learning and compare the performance of two
 - MonthlyCharges
 - customerID *(identified by the model, though it is a unique identifier and would typically be excluded in practice)*
 
-### Tools Used
-- Python
-- Pandas
-- Scikit-learn
-- Google Colab
+## 📌 Task 7: Machine Learning Pipeline and Feature Engineering
 
-## 🛠️ Technologies Used
+### Objective
+Build an end-to-end machine learning pipeline using the Titanic dataset by combining preprocessing and model training into a single workflow. Apply feature engineering and compare model performance before and after adding new features.
+
+### Tasks Completed
+- Loaded and explored the Titanic dataset
+- Cleaned missing values
+- Selected features and target variable
+- Split the dataset into training and testing sets
+- Identified numerical and categorical features
+- Built a ColumnTransformer for preprocessing
+- Created a Machine Learning Pipeline using Logistic Regression
+- Trained and evaluated the pipeline
+- Created two engineered features:
+  - FamilySize
+  - IsAlone
+- Compared model performance before and after feature engineering
+- Saved the trained pipeline using Joblib
+
+### Results
+
+**Original Pipeline Accuracy:** 81.01%
+
+**Pipeline Accuracy After Feature Engineering:** 79.89%
+
+### Key Learning
+
+This task demonstrated how machine learning pipelines simplify preprocessing and model training into a single workflow. It also highlighted that feature engineering should always be evaluated, as newly created features may improve, maintain, or reduce model performance depending on the dataset.
+
+### Technologies Used
+
 - Python
 - Pandas
 - NumPy
-- Matplotlib
-- Seaborn
 - Scikit-learn
+- ColumnTransformer
+- Pipeline
+- Logistic Regression
+- Joblib
 - Google Colab
-- GitHub
 
 ## 🎯 Internship Skills Learned
 - Data Exploration
