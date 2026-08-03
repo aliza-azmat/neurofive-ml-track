@@ -113,16 +113,54 @@ Build an end-to-end machine learning pipeline using the Titanic dataset by combi
 
 This task demonstrated how machine learning pipelines simplify preprocessing and model training into a single workflow. It also highlighted that feature engineering should always be evaluated, as newly created features may improve, maintain, or reduce model performance depending on the dataset.
 
+## 📌 Task 8: Ensemble Learning with Random Forest and XGBoost
+
+### Objective
+Train and compare ensemble machine learning models using the Titanic dataset. The performance of Random Forest and XGBoost was compared with Logistic Regression as the baseline single model.
+
+### Tasks Completed
+- Installed and imported XGBoost
+- Loaded and explored the Titanic dataset
+- Handled missing values
+- Removed unnecessary columns
+- Converted categorical features into numerical values
+- Split the dataset into training and testing sets
+- Trained and evaluated a Logistic Regression baseline model
+- Trained and evaluated a Random Forest Classifier
+- Trained and evaluated an XGBoost Classifier
+- Created a model performance comparison table
+- Plotted feature importances for Random Forest
+- Plotted feature importances for XGBoost
+- Compared the most important features identified by both models
+- Explained the difference between Random Forest and XGBoost
+
+### Model Performance Comparison
+
+| Model | Metric | Score |
+|---|---|---:|
+| Logistic Regression | Accuracy | 80.45% |
+| Random Forest | Accuracy | 82.68% |
+| XGBoost | Accuracy | 78.21% |
+
+### Feature Importance Comparison
+
+- **Random Forest:** Fare, Sex, and Age were the three most important features.
+- **XGBoost:** Sex, Pclass, and Embarked were the three most important features.
+
+### Key Learning
+
+Random Forest achieved the highest accuracy of **82.68%** in this experiment. The results showed that ensemble models can provide strong predictions, but performance depends on the dataset, preprocessing method, and model settings. The feature-importance analysis also showed that different ensemble models may assign importance differently to the same input features.
+
 ### Technologies Used
 
 - Python
 - Pandas
 - NumPy
+- Matplotlib
 - Scikit-learn
-- ColumnTransformer
-- Pipeline
 - Logistic Regression
-- Joblib
+- Random Forest Classifier
+- XGBoost Classifier
 - Google Colab
 
 ## 🎯 Internship Skills Learned
