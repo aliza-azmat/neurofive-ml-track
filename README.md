@@ -151,6 +151,50 @@ Train and compare ensemble machine learning models using the Titanic dataset. Th
 
 Random Forest achieved the highest accuracy of **82.68%** in this experiment. The results showed that ensemble models can provide strong predictions, but performance depends on the dataset, preprocessing method, and model settings. The feature-importance analysis also showed that different ensemble models may assign importance differently to the same input features.
 
+## 📌 Task 9: Handling Imbalanced Data
+
+### Objective
+Analyze and handle class imbalance in the Telco Customer Churn dataset and compare model performance before and after applying a balancing technique.
+
+### Dataset
+Telco Customer Churn Dataset
+
+The target variable was `Churn`, where:
+- `0` = No Churn
+- `1` = Churn
+
+### Class Distribution
+
+| Class | Count | Percentage |
+|---|---:|---:|
+| No Churn | 5,174 | 73.46% |
+| Churn | 1,869 | 26.54% |
+
+The dataset is imbalanced because the majority class is significantly larger than the minority class.
+
+### Technique Used
+
+`class_weight="balanced"` was applied to Logistic Regression to give greater importance to the minority class during training.
+
+### Model Performance
+
+| Metric | Before Balancing | After Balancing |
+|---|---:|---:|
+| Accuracy | 80.34% | 73.88% |
+| Precision | 65.20% | 50.51% |
+| Recall | 55.61% | 78.88% |
+| F1-Score | 60.03% | 61.59% |
+
+### Key Findings
+
+After applying class weighting, Recall increased significantly from **55.61% to 78.88%**, meaning the balanced model identified a much larger proportion of customers who actually churned. The F1-score also improved from **60.03% to 61.59%**.
+
+Although Accuracy decreased from **80.34% to 73.88%**, this does not indicate that the balanced model was necessarily worse. For imbalanced datasets, accuracy can be misleading because a model can achieve high accuracy by favoring the majority class.
+
+### Why Accuracy Can Be Misleading
+
+Since 73.46% of customers belong to the majority `No Churn` class, a model can achieve relatively high accuracy by mostly predicting the majority class while failing to identify many churned customers. Therefore, Precision, Recall, and F1-score are more informative metrics for evaluating performance on the minority class.
+
 ### Technologies Used
 
 - Python
