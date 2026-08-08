@@ -195,6 +195,44 @@ Although Accuracy decreased from **80.34% to 73.88%**, this does not indicate th
 
 Since 73.46% of customers belong to the majority `No Churn` class, a model can achieve relatively high accuracy by mostly predicting the majority class while failing to identify many churned customers. Therefore, Precision, Recall, and F1-score are more informative metrics for evaluating performance on the minority class.
 
+## 📌 Task 10: Deploying a Machine Learning Model
+
+### Objective
+Deploy the best-performing model from previous tasks as an interactive Streamlit web application.
+
+### Model Used
+Random Forest Classifier
+
+The Random Forest model from Task 8 was selected for deployment because it achieved the highest accuracy among the models compared in that task.
+
+**Random Forest Accuracy: 82.68%**
+
+### Dataset
+Titanic Survival Dataset
+
+### Features Used
+- Pclass
+- Sex
+- Age
+- SibSp
+- Parch
+- Fare
+- Embarked
+
+### Application
+The Streamlit application allows users to enter Titanic passenger information and receive a predicted survival outcome from the trained Random Forest model.
+
+### Deployment
+The application was deployed using Streamlit Community Cloud.
+
+### Project Files
+- `app.py` – Streamlit application
+- `titanic_random_forest.pkl` – Saved Random Forest model
+- `sex_encoder.pkl` – Saved Sex encoder
+- `embarked_encoder.pkl` – Saved Embarked encoder
+- `requirements.txt` – Required Python libraries
+- `Task_10_Deploying_Titanic_RandomForest.ipynb` – Task notebook
+
 ### Technologies Used
 
 - Python
