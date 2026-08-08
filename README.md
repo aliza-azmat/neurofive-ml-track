@@ -224,6 +224,7 @@ The Streamlit application allows users to enter Titanic passenger information an
 
 ### Deployment
 The application was deployed using Streamlit Community Cloud.
+Live App: [https://aliza-azmat-neurofive-ml-track-app-z5c604.streamlit.app/]
 
 ### Project Files
 - `app.py` – Streamlit application
